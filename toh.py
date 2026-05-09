@@ -9,8 +9,8 @@ solution in the terminal. No external dependencies — runs on any Python 3
 install, including the standard Python interpreter on RISC-V Linux distros.
 
 Usage:
-    python3 hanoi.py            # default: 5 disks
-    python3 hanoi.py 7          # custom disk count (1–10 sensible)
+    python3 toh.py            # default: 5 disks
+    python3 toh.py 7          # custom disk count (1–10 sensible)
 """
 
 import os
@@ -62,7 +62,7 @@ def draw():
     print("  " + (BASE_CH * width + gap) * 3)
     print("  " + "".join(f"{label:^{width}}{gap}" for label in "ABC"))
 
-    time.sleep(DELAY)
+    time.sleep(DELAY)  #yeah put in sleep.
 
 def step(src, dst):
     """Pop a disk off `src`, push onto `dst`, and redraw."""
